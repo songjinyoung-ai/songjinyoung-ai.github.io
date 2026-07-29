@@ -1,0 +1,87 @@
+:root {
+  --canvas: #0a0d3a;
+  --surface: #1e2353;
+  --blurple: #5865f2;
+  --magenta: #ec48bd;
+  --green: #35ed7e;
+  --ink: #ffffff;
+  --muted: #c5c8e8;
+  --radius: 24px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--canvas);
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.5;
+}
+
+a { color: inherit; }
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1rem clamp(1rem, 4vw, 3rem);
+  background: rgba(10, 13, 58, 0.92);
+  backdrop-filter: blur(12px);
+}
+.brand { font-size: 1.25rem; font-weight: 800; text-decoration: none; }
+.brand span { color: var(--green); }
+.site-nav { display: flex; gap: 1.25rem; align-items: center; }
+.site-nav a { font-size: .95rem; text-decoration: none; }
+.site-nav a:hover, .site-nav a:focus-visible { color: var(--green); }
+.menu-toggle { display: none; }
+
+main { overflow: hidden; }
+.hero, .content-section, .card-grid, .games-placeholder, .contact-section {
+  width: min(1200px, calc(100% - 2rem));
+  margin-inline: auto;
+}
+.hero {
+  min-height: 72vh;
+  display: grid;
+  align-content: center;
+  padding-block: clamp(5rem, 14vw, 10rem);
+  background: radial-gradient(circle at 80% 20%, rgba(236, 72, 189, .38), transparent 34rem), radial-gradient(circle at 20% 60%, rgba(88, 101, 242, .5), transparent 30rem);
+}
+.eyebrow, .card-label { margin: 0 0 .8rem; color: var(--green); font-size: .75rem; font-weight: 800; letter-spacing: .14em; }
+h1, h2, h3, p { margin-top: 0; }
+h1 { max-width: 11ch; margin-bottom: 1.5rem; font-size: clamp(3.2rem, 9vw, 7rem); line-height: .95; letter-spacing: -.06em; }
+h1 span { color: var(--green); }
+h2 { font-size: clamp(2rem, 5vw, 4rem); line-height: 1.05; letter-spacing: -.04em; }
+h3 { font-size: clamp(1.4rem, 3vw, 2rem); }
+.hero-copy, .content-section > p, .games-placeholder > p { max-width: 42rem; color: var(--muted); font-size: 1.1rem; }
+.content-section, .card-grid, .games-placeholder, .contact-section { padding-block: clamp(4rem, 10vw, 8rem); }
+.card-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.section-heading { grid-column: 1 / -1; }
+.feature-card, .games-placeholder { padding: clamp(1.5rem, 4vw, 3rem); border-radius: var(--radius); background: var(--surface); }
+.accent-card { background: linear-gradient(135deg, var(--magenta), var(--blurple)); }
+.feature-card p, .games-placeholder p { color: var(--muted); }
+.games-placeholder { background: linear-gradient(135deg, rgba(88, 101, 242, .9), rgba(30, 35, 83, .95)); }
+.contact-section { padding-bottom: 8rem; }
+.contact-section a { color: var(--green); font-weight: 700; }
+
+@media (max-width: 767px) {
+  .menu-toggle {
+    display: inline-flex;
+    padding: .6rem .8rem;
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 999px;
+    color: var(--ink);
+    background: transparent;
+  }
+  .site-nav { display: none; position: absolute; inset: 100% 1rem auto; flex-direction: column; align-items: stretch; padding: 1rem; border-radius: 16px; background: var(--surface); }
+  .site-nav.is-open { display: flex; }
+  .site-nav a { padding: .65rem; }
+  .card-grid { grid-template-columns: 1fr; }
+  .hero, .content-section, .card-grid, .games-placeholder, .contact-section { width: min(100% - 1.25rem, 1200px); }
+}
+
+:focus-visible { outline: 3px solid var(--green); outline-offset: 4px; }
