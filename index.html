@@ -1,37 +1,17 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="송진영의 CP Modem 개발 경력과 인터랙티브 게임 포트폴리오">
-  <title>송진영 · Senior Modem Developer</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
-  <script src="game.js" defer></script>
-  <script src="tetris.js" defer></script>
-  <style>.games-section{max-width:1100px}.game-layout{max-width:1040px}</style>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="JY Lab — AI, Investment, Samsung, Projects">
+  <title>JY Lab</title><link rel="stylesheet" href="styles.css"><script src="script.js" defer></script>
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#home">SJ<span>.</span></a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">메뉴</button>
-    <nav id="site-nav" class="site-nav" aria-label="주요 메뉴">
-      <a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#games">Games</a><a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <header class="site-nav"><a class="brand" href="#top"><span class="brand-mark">JY</span>JY Lab</a><nav aria-label="주요 메뉴"><a href="#ai">AI</a><a href="#investment">Investment</a><a href="#samsung">Samsung</a><a href="#projects">Projects</a></nav><a class="about-link" href="#about">ABOUT ↗</a></header>
   <main>
-    <section id="home" class="hero" aria-labelledby="hero-title">
-      <div><p class="eyebrow">CP MODEM · 20 YEARS · GLOBAL GALAXY DEVELOPMENT</p><h1 id="hero-title">기술과 사람을<br><span>연결합니다.</span></h1><p class="hero-copy">삼성전자 수석 개발자 송진영의 프로페셔널 포트폴리오입니다.</p><a class="button button-green" href="#games">게임 플레이</a></div>
-      <img class="profile-art" src="profile-cartoon.png" alt="50대 개발자 스타일의 캐릭터 송진영">
-    </section>
-    <section id="about" class="content-section split-section" aria-labelledby="about-title"><div><p class="eyebrow">ABOUT</p><h2 id="about-title">단말 개발, 깊은 전문성, 새로운 시도.</h2></div><div><p>CP Modem 분야에서 20년간 단말 개발을 수행했습니다. Galaxy 시리즈 글로벌 개발 프로젝트에 참여하며 지역향 모뎀 개발을 담당했습니다.</p><p>기술의 디테일과 사람이 즐기는 경험을 함께 설계합니다.</p></div></section>
-    <section id="projects" class="card-grid" aria-labelledby="projects-title"><div class="section-heading"><p class="eyebrow">PROJECTS</p><h2 id="projects-title">Experience in motion.</h2></div><article class="feature-card"><p class="card-label">01 · DEVICE DEVELOPMENT</p><h3>Galaxy Series</h3><p>Galaxy 시리즈 글로벌 개발 프로젝트 다수 참여. CP Modem 지역향 담당.</p></article><article class="feature-card accent-card"><p class="card-label">02 · NEXT EXPLORATION</p><h3>Practical Ideas</h3><p>기술을 더 쉽게 경험하도록 게임과 인터랙션을 실험합니다.</p></article></section>
-    <section id="experience" class="content-section experience-section" aria-labelledby="experience-title"><p class="eyebrow">EXPERIENCE</p><h2 id="experience-title">20 years of device craft.</h2><div class="experience-card"><strong>수석 · 삼성전자</strong><span>CP Modem 개발 20년</span><span>단말 개발 · 지역향 담당</span><span>Galaxy 시리즈 글로벌 개발</span></div></section>
-    <section id="games" class="games-section" aria-labelledby="games-title"><div class="section-heading"><p class="eyebrow">GAMES</p><h2 id="games-title">Arcade in orbit.</h2><p>우주를 배경으로 지렁이와 테트리스를 즐겨보세요.</p></div>
-      <div class="game-layout"><div class="game-panel"><h3>Cosmic Worm</h3><canvas id="game-canvas" width="640" height="400" aria-label="우주 지렁이 게임 화면"></canvas><div class="game-status" role="status" aria-live="polite">시작 버튼을 눌러 게임을 시작하세요.</div></div><aside class="game-controls" aria-label="지렁이 게임 설정과 조작"><div class="game-stats"><span>점수 <strong id="score">0</strong></span><span>최고 <strong id="high-score">0</strong></span><span>단계 <strong id="stage-label">1</strong></span></div><label for="stage-select">단계 선택</label><select id="stage-select"></select><label class="speed-boost-option"><input id="speed-boost-toggle" type="checkbox"> 방향 부스트 <span>+35% · 0.8초</span></label><div class="control-row"><button id="start-button" class="button button-green" type="button">시작</button><button id="pause-button" class="button button-ghost" type="button" disabled>일시정지</button><button id="restart-button" class="button button-ghost" type="button">재시작</button></div><p class="control-help">방향키 / WASD / 아래 버튼</p><div class="touch-pad" aria-label="터치 방향 버튼"><button type="button" data-direction="up" aria-label="위">↑</button><div><button type="button" data-direction="left" aria-label="왼쪽">←</button><button type="button" data-direction="down" aria-label="아래">↓</button><button type="button" data-direction="right" aria-label="오른쪽">→</button></div></div></aside></div>
-    </section>
-    <section id="tetris" class="tetris-section" aria-labelledby="tetris-title"><div class="section-heading"><p class="eyebrow">RUSSIAN ARCADE</p><h2 id="tetris-title">Cosmic Tetris.</h2><p>러시아 아케이드 무드의 로컬 1P/2P 테트리스.</p></div><div class="tetris-layout"><div class="tetris-board-wrap"><canvas id="tetris-canvas" width="300" height="600" aria-label="테트리스 게임 화면"></canvas><div id="tetris-status" class="game-status" role="status" aria-live="polite">모드를 선택하고 시작하세요.</div></div><aside class="tetris-controls"><label for="tetris-mode">플레이 모드</label><select id="tetris-mode"><option value="1p">1P · Solo</option><option value="2p">2P · Local</option></select><div class="control-row"><button id="tetris-start" class="button button-green" type="button">시작</button><button id="tetris-pause" class="button button-ghost" type="button" disabled>일시정지</button><button id="tetris-restart" class="button button-ghost" type="button">재시작</button></div><p class="control-help">1P: WASD · 2P: 방향키 / 숫자키</p></aside></div></section>
-    <section id="contact" class="contact-section" aria-labelledby="contact-title"><p class="eyebrow">CONTACT</p><h2 id="contact-title">Keep in touch.</h2><a href="mailto:song.jinyoung@gmail.com">song.jinyoung@gmail.com</a><a href="https://songjinyoung-ai.github.io">songjinyoung-ai.github.io</a></section>
-  </main>
-</body>
-</html>
+    <section class="hero" id="top"><div><p class="eyebrow">PERSONAL RESEARCH LAB · 2026</p><h1>배운 것을<br><em>만들고,</em> 기록한다.</h1><p class="hero-copy">AI를 배우고, 투자와 기술을 관찰하며,<br>작은 프로젝트로 생각을 현실에 옮깁니다.</p><a class="button" href="#ai">AI 자료 보기 <b>↓</b></a></div><div class="orbit" aria-hidden="true"><i></i><strong>JY<small>LAB</small></strong><span>LEARN</span><span>BUILD</span><span>SHARE</span></div></section>
+    <section class="section intro" id="about"><p class="section-label">01 / ABOUT</p><div><h2>관찰하고, 정리하고,<br><em>직접 만들어봅니다.</em></h2><p>JY Lab은 공부한 내용을 쌓아두는 개인 아카이브입니다. 수업에서 배운 도구를 내 프로젝트에 적용하고, 결과와 시행착오를 다시 기록합니다.</p></div><div class="stat"><b>04</b><small>FOCUS AREAS</small><strong>AI · INVESTMENT<br>SAMSUNG · PROJECTS</strong></div></section>
+    <section class="section ai" id="ai"><div class="heading"><div><p class="section-label">02 / AI NOTES</p><h2>AI <em>학습 자료</em></h2></div><p>최근 수업에서 배운 내용을<br>내 언어로 다시 정리합니다.</p></div><div class="materials"><article><span>01</span><div><small>THEORY</small><h3>멀티에이전트 오케스트레이션</h3><p>에이전트 역할 분리, 작업 분배, 결과 통합 구조를 공부하는 이론 자료.</p></div><b>PDF 자료 ↗</b></article><article><span>02</span><div><small>PRACTICE</small><h3>Codex Desktop 실습</h3><p>Codex Desktop을 활용해 실제 작업을 설계하고 실행한 실습 기록.</p></div><b>실습 기록 ↗</b></article><article><span>03</span><div><small>REFERENCE</small><h3>프롬프트와 개발 도구</h3><p>프롬프트 엔지니어링, Frontmatter, Git worktree를 한곳에서 정리.</p></div><b>참고 자료 ↗</b></article></div><a class="text-link" href="https://adorable-hail-415.notion.site/1-7-8-38b137efedf680099c68fe3522acc834?p=460137efedf6826480e1014ef81b5677&pm=s" target="_blank" rel="noreferrer">원본 Notion 자료실 열기 ↗</a></section>
+    <section class="section dark" id="investment"><p class="section-label">03 / AREAS</p><div class="area-grid"><a href="#investment"><small>02</small><h3>Investment</h3><p>시장 흐름과 투자 아이디어</p></a><a href="#samsung" id="samsung"><small>03</small><h3>Samsung</h3><p>업무와 기술에 관한 노트</p></a><a href="#projects"><small>04</small><h3>Projects</h3><p>직접 만든 결과물 모음</p></a></div></section>
+    <section class="section projects" id="projects"><div class="heading"><div><p class="section-label">04 / PROJECTS</p><h2>만든 것들을<br><em>모아둡니다.</em></h2></div><p>기존 홈페이지의 프로젝트도<br>이곳으로 이동했습니다.</p></div><div class="project-grid"><article><small>01 · DEVICE DEVELOPMENT</small><h3>Galaxy Series</h3><p>삼성전자 CP Modem 분야 20년의 단말 개발 경험과 Galaxy 시리즈 글로벌 프로젝트 기록.</p></article><article><small>02 · INTERACTIVE GAME</small><h3>Cosmic Worm</h3><p>우주를 배경으로 만든 로컬 지렁이 게임.</p><a href="projects/index.html#games">프로젝트 열기 ↗</a></article><article><small>03 · LOCAL ARCADE</small><h3>Cosmic Tetris</h3><p>러시아 아케이드 무드로 만든 1P·2P 로컬 테트리스 실험.</p><a href="projects/index.html#tetris">프로젝트 열기 ↗</a></article><article><small>04 · EXPERIMENTS</small><h3>Practical Ideas</h3><p>기술을 더 쉽게 경험하도록 게임과 인터랙션을 실험하는 프로젝트 모음.</p></article></div><a class="text-link" href="https://github.com/songjinyoung-ai/songjinyoung-ai.github.io" target="_blank" rel="noreferrer">프로젝트 저장소 보기 ↗</a></section>
+  </main><footer><div><span class="brand-mark">JY</span><strong>JY Lab</strong></div><p>LEARN · BUILD · SHARE</p><small>© 2026 JY Lab. Personal archive.</small></footer>
+</body></html>
