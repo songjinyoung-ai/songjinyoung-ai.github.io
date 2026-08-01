@@ -24,6 +24,12 @@ const materials = [
     description: "프롬프트 엔지니어링, Frontmatter, Git worktree를 한곳에서 정리.",
     status: "참고 자료",
   },
+  {
+    tag: "LOOP ENGINEERING",
+    title: "트랙 2: 루프 엔지니어링",
+    description: "계획, 실행, 검증, 수정의 반복 구조와 실습자료를 정리한 초안.",
+    status: "로컬 초안",
+  },
 ];
 
 const navItems = ["AI", "Investment", "Samsung", "Projects"];
@@ -95,6 +101,7 @@ export default function Home() {
             </article>
           ))}
         </div>
+        <a className="text-link" href="/ai/index.html">로컬 AI 자료 페이지 열기 ↗</a>
         <a className="text-link" href="https://adorable-hail-415.notion.site/1-7-8-38b137efedf680099c68fe3522acc834?p=460137efedf6826480e1014ef81b5677&pm=s" target="_blank" rel="noreferrer">원본 Notion 자료실 열기 ↗</a>
       </section>
 

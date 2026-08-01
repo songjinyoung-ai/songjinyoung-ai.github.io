@@ -1,0 +1,65 @@
+[
+  {
+    "slug": "claude-code-codex",
+    "title": "Claude Code · Codex 필수 커맨드 비교",
+    "category": "AI / Tools",
+    "sourceUrl": "https://adorable-hail-415.notion.site/Claude-Code-Codex-39d137efedf6802ab385d3cdfc29580b?pvs=25",
+    "localPath": "content/ai/claude-code-codex.md",
+    "status": "draft",
+    "capturedAt": "2026-07-29"
+  },
+  {
+    "slug": "terminal-frontmatter",
+    "title": "터미널 명령어 & Frontmatter",
+    "category": "AI / Development",
+    "sourceUrl": "https://adorable-hail-415.notion.site/Frontmatter-39d137efedf68040b0e9c710f32125eb?pvs=25",
+    "localPath": "content/ai/terminal-frontmatter.md",
+    "status": "draft",
+    "capturedAt": "2026-07-29"
+  },
+  {
+    "slug": "prompt-engineering",
+    "title": "프롬프트 엔지니어링",
+    "category": "AI / Prompt",
+    "sourceUrl": "https://adorable-hail-415.notion.site/39d137efedf6802dafc6edc8c82ef7f9?pvs=25",
+    "localPath": "content/ai/prompt-engineering.md",
+    "status": "draft",
+    "capturedAt": "2026-07-29"
+  },
+  {
+    "slug": "git-worktree",
+    "title": "git worktree 명령어",
+    "category": "AI / Git",
+    "sourceUrl": "https://adorable-hail-415.notion.site/git-worktree-39e137efedf6806cb8aac2e7bb54ff4b?pvs=25",
+    "localPath": "content/ai/git-worktree.md",
+    "status": "draft",
+    "capturedAt": "2026-07-29"
+  },
+  {
+    "slug": "thinking",
+    "title": "생각해보기",
+    "category": "AI / Discussion",
+    "sourceUrl": "https://adorable-hail-415.notion.site/3a5137efedf6807f809bc59d0927dab6?pvs=25",
+    "localPath": "content/ai/thinking.md",
+    "status": "draft",
+    "capturedAt": "2026-07-29"
+  },
+  {
+    "slug": "memory-file",
+    "title": "잘 작성된 메모리 파일이란",
+    "category": "AI / Context",
+    "sourceUrl": "https://adorable-hail-415.notion.site/3a6137efedf6802cabf7e89b00a4ae49?pvs=25",
+    "localPath": "content/ai/memory-file.md",
+    "status": "draft",
+    "capturedAt": "2026-07-29"
+  },
+  {
+    "slug": "track2-loop-engineering",
+    "title": "트랙 2: 루프 엔지니어링 설계 실전",
+    "category": "AI / Loop Engineering",
+    "sourceUrl": "https://adorable-hail-415.notion.site/2-7-391137efedf680b18c84ddd2412c2844?p=581137efedf68252871b01ce97e41857&pm=s",
+    "localPath": "content/ai/track2-loop-engineering.md",
+    "status": "draft",
+    "capturedAt": "2026-07-29"
+  }
+]
